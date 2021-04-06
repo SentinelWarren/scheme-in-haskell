@@ -3,21 +3,7 @@ import System.Environment
 import Text.ParserCombinators.Parsec hiding (spaces)
 import Control.Monad
 
-main :: IO ()
-main = do
-    args <- getArgs
-    putStrLn (readExpr (args !! 0))
-
-symbol :: Parser Char
-symbol = oneOf "!$%&|*+/:<=?>@^_~#"
-
-readExpr :: String -> String
-readExpr input = case parse parseExpr "lisp" input of
-    Left err -> "No match: " ++ show err
-    Right val -> "Found value: " ++ show val
-
-spaces :: Parser ()
-spaces = skipMany1 space
+-- ****** Data Types ******
 
 data LispVal = Atom String
              | List [LispVal]
@@ -27,6 +13,9 @@ data LispVal = Atom String
              | String String
              | Bool Bool
              deriving Show
+
+
+-- ****** Parser ******
 
 parseString :: Parser LispVal
 parseString = do
@@ -84,3 +73,22 @@ parseExpr = parseAtom
                x <- (try parseList) <|> parseDottedList
                char ')'
                return x
+
+spaces :: Parser ()
+spaces = skipMany1 space
+
+symbol :: Parser Char
+symbol = oneOf "!$%&|*+/:<=?>@^_~#"
+
+readExpr :: String -> String
+readExpr input = case parse parseExpr "lisp" input of
+    Left err -> "No match: " ++ show err
+    Right val -> "Found value: " ++ show val
+
+
+-- ****** MAIN | REPL ******
+
+main :: IO ()
+main = do
+        args <- getArgs
+        putStrLn (readExpr (args !! 0))
