@@ -2,3 +2,4 @@
 *.hi
 *.o
 src/main
+.devcontainer
