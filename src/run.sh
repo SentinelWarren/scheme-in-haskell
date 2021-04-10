@@ -1,3 +1,5 @@
 #!/bin/bash -e
 ghc main.hs
-rlwrap ./main "$1"
+rlwrap ./main
+
+# rlwrap ./main "$1"
