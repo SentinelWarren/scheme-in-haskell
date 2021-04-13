@@ -2,11 +2,9 @@
 
 if [ "$1" == "--test" ];
 then
-    ghc src/Main.hs
-    runhaskell -i./src test/Spec.hs
+    runhaskell -i./src -i./app test/Spec.hs
 else
-    ghc src/Main.hs
-    rlwrap src/Main
+    ghc -i./src app/Main.hs
+    rlwrap app/Main
+    rm src/*.o src/*.hi app/*.o app/*.hi
 fi
-
-# rlwrap ./main "$1"
