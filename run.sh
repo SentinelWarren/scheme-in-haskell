@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-if [ $1 == "--test" ];
+if [ "$1" == "--test" ];
 then
     ghc src/Main.hs
     runhaskell -i./src test/Spec.hs
