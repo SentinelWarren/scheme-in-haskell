@@ -1,5 +1,6 @@
-.*.swp
-*.hi
 *.o
-src/Main
+*.hi
+*.swp
 .devcontainer
+app/Main
+bak
