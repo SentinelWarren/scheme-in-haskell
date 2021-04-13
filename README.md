@@ -1,8 +1,8 @@
 # Intro
-The aim of this project is writing a Scheme using Haskell. It follows the [Write Yourself a Scheme in 48 Hours](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours) Tutorial.
+The aim of this project is writing a Scheme interpreter using Haskell. It follows the [Write Yourself a Scheme in 48 Hours](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours) Tutorial.
 
-## What is a Scheme?
-A Scheme is a statically scoped and properly tail-recursive dialect of the Lisp programming language.  
+## What is Scheme?
+Scheme is a statically scoped and properly tail-recursive dialect of the Lisp programming language.  
 You can read more about it [here](https://groups.csail.mit.edu/mac/projects/scheme/) or on [Wikipedia](https://en.wikipedia.org/wiki/Scheme_(programming_language)).
 
 # Getting Started
