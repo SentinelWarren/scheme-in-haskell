@@ -1,8 +1,11 @@
+-- {-# OPTIONS_GHC -F -pgmF hspec-discover #-}
+
 module Test.Spec where
 
 import Main hiding (main)
 import Test.Hspec
 import Data.Foldable
+import Primitives
 
 test exprs expected = it (last exprs) $ do
     env <- primitiveBindings
