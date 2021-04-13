@@ -6,10 +6,10 @@ Scheme is a statically scoped and properly tail-recursive dialect of the Lisp pr
 You can read more about it [here](https://groups.csail.mit.edu/mac/projects/scheme/) or on [Wikipedia](https://en.wikipedia.org/wiki/Scheme_(programming_language)).
 
 # Getting Started
-To run the project you should install `ghc` or `ghci`, the interactive haskell environment. 
+To run the project you should install `ghc`, or `ghci` the interactive haskell environment. 
 You can download it from the haskell website: [https://www.haskell.org/downloads/](https://www.haskell.org/downloads/).
 
-After installation you can either run the file `run.sh` or `run.sh --test` just for tests, or edit and recompile the `src/main.hs` file through `ghci`.
+After installation you can either run the file `run.sh` or `run.sh --test` just for tests, or edit and recompile the `src/Main.hs` file through `ghci`.
 
 To run examples you can follow the book [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html).  
 
