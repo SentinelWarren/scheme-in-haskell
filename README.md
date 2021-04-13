@@ -9,14 +9,15 @@ You can read more about it [here](https://groups.csail.mit.edu/mac/projects/sche
 To run the project you should install `ghc` or `ghci`, the interactive haskell environment. 
 You can download it from the haskell website: [https://www.haskell.org/downloads/](https://www.haskell.org/downloads/).
 
-After installation you can either edit and recompile the `src/main.hs` file through `ghci`.
+After installation you can either run the file `run.sh` or `run.sh --test` just for tests, or edit and recompile the `src/main.hs` file through `ghci`.
 
 To run examples you can follow the book [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html).  
 
 ## Next Steps (TO-DOs)
 |Name               |Status   |
 |-------------------|---------|
-|Add "xyz" support  | 👷 TODO |
+|Add "case" support | 👷 TODO |
+|Improve float ops  | 👷 TODO |
 
 
 
